@@ -1,0 +1,4 @@
+<app-player-board [playerName]="Player.Player1" [playerValue]="player1Value"></app-player-board>
+<app-player-board [playerName]="Player.Player2" [playerValue]="player2Value"></app-player-board>
+<button (click)="onNewGame()">Nouveau jeu</button>
+<div *ngIf="winner">{{ winner }} a remporté la partie</div>
